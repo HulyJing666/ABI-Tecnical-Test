@@ -6,11 +6,11 @@
 Banks and entities that give out credit play a crucial role in market economies. They decide who can be financed, on what terms and this can make or break investment decisions. For markets and society to function, individuals and companies need access to credit. Credit scoring algorithms, which make a guess at the probability of default, are the method banks and entities use to determine whether or not a loan should be granted. This challenge requires participants to improve on the state of the art in credit scoring, by predicting the probability that somebody will be credit worthy by first predicting the probability that a client will experience financial distress in the next quarter. Historical data are provided on 250,000 borrowers. The goal of this challenge is to build a model that lenders can use to help make the best financial decisions from a credit risk perspective. 
 
 ### Given Inputs 
-• data_dictionary.xlsx: Brief description of the variables that are available for the challenge. /n
-• cs-training.csv and cs-test.csv: Database with all the available business variables. /n
-• Use the target variable SeriousDlqin2yrs, already included in the dataset. /n
-• Proceed with any feature engineering to build any variables you consider important for the challenge. /n 
-• sample_results.csv: Database with a sample of the credit scoring model results for clients in the training database./n 
+• data_dictionary.xlsx: Brief description of the variables that are available for the challenge.
+• cs-training.csv and cs-test.csv: Database with all the available business variables.
+• Use the target variable SeriousDlqin2yrs, already included in the dataset.
+• Proceed with any feature engineering to build any variables you consider important for the challenge.
+• sample_results.csv: Database with a sample of the credit scoring model results for clients in the training database.
 
 ## Questionnaire: 
 
