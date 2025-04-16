@@ -7,23 +7,33 @@ Banks and entities that give out credit play a crucial role in market economies.
 
 ### Given Inputs 
 • data_dictionary.xlsx: Brief description of the variables that are available for the challenge.
+
 • cs-training.csv and cs-test.csv: Database with all the available business variables.
+
 • Use the target variable SeriousDlqin2yrs, already included in the dataset.
+
 • Proceed with any feature engineering to build any variables you consider important for the challenge.
+
 • sample_results.csv: Database with a sample of the credit scoring model results for clients in the training database.
 
 ## Questionnaire: 
 
 ### 1. Briefly describe how you would build the target variable if it were not available in the dataset. 
 If SeriousDlqin2yrs were not provided, we could infer it from payment history data. For example, if a borrower had an account that was seriously delinquent (typically defined as more than 90 days past due), uncollectible, in foreclosure, or similar, we could label it as 1 (likely default). Conversely, borrowers with an on-time payment history over the next two years would be labeled as 0.
+
 However, in this dataset, the target is explicitly provided, so synthetic labeling is not required.
 
 ### 2. What metrics do you consider relevant to consider in the decision of choosing the best model? Discuss why you might give priority to one metric over another. 
 The most relevant metrics in a credit scoring context are:
+
 • AUC-ROC (Area Under Curve - Receiver Operating Characteristics)Measures the model's ability to distinguish between default and non-default. It is threshold-independent and ideal for imbalanced data sets.
+
 • Precision and Recall: Useful when the cost of false positives (offering credit to a defaulter) or false negatives (rejecting a good borrower) is high.
+
 • F1 Score: Balances precision and recall.
+
 • Accuracy is less relevant due to class imbalance.
+
 • KS Statistic (Kolmogorov–Smirnov): Frequently used in finance to measure the separation between good and bad credit risks.
 
 ### 3. In the metric optimization process, how may the cutoff point or threshold of the prediction of the probability of default affect the result? 
@@ -31,7 +41,9 @@ The most relevant metrics in a credit scoring context are:
 
 ### Expected outputs 
 • Python scripts used to develop the model. 
+
 • Executive summary including any visuals or plots used to explain the model building process and results. 
+
 • Insights gathered on any of the data exploring process and model building. 
 
 ## 2. Client Segmentation Challenge (Unsupervised Learning) 
@@ -40,6 +52,7 @@ Understanding a company’s client basis is key to proceed with proper commercia
 
 ### Given Inputs 
 • Same as the ones used in the last challenge. 
+
 • Proceed with any feature engineering to build any variables you consider important for the challenge. 
 
 ## Questionnaire: 
@@ -49,7 +62,9 @@ Understanding a company’s client basis is key to proceed with proper commercia
 
 ### Expected outputs 
 • Python scripts used to develop the model. 
+
 • Executive summary including any visuals or plots used to explain the model building process and results. 
+
 • Insights gathered on any of the data exploring process and model building. 
 
 ## 3. Concepts and understanding 
