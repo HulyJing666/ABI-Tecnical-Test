@@ -36,8 +36,30 @@ The most relevant metrics in a credit scoring context are:
 
 • KS Statistic (Kolmogorov–Smirnov): Frequently used in finance to measure the separation between good and bad credit risks.
 
+AUC-ROC and KS scores should be prioritized due to their robustness in classification predictions, especially in imbalanced data sets, such as credit defaults.
+
 ### 3. In the metric optimization process, how may the cutoff point or threshold of the prediction of the probability of default affect the result? 
+Changing the cutoff value affects the number of predicted probabilities that are labeled as default (1) versus non-default (0):
+
+Lower threshold: More customers are flagged as high risk; this increases recall, but may generate more false positives.
+
+Higher threshold: Fewer customers are flagged; this increases accuracy, but carries the risk of missing defaulters.
+
+The threshold should be chosen based on the company's risk tolerance and cost-benefit analysis. For example, AB InBev might prefer to avoid false negatives, thus prioritizing a lower threshold.
+
 ### 4. What additional variables do you think should be considered given the context of our clients at AB InBev? (Bars, Restaurants, Convenience Stores, etc.) 
+
+Given that AB InBev operates in bars, restaurants, convenience stores, etc., the following contextual variables could improve predictions:
+
+Business Seasonality Index.
+
+Sales Volume or Inventory Turnover.
+
+Location Type: Urban vs. rural or proximity to areas with high foot traffic.
+
+Point-of-Sale (POS) Trends.
+
+Credit History with Distributors or Suppliers.
 
 ### Expected outputs 
 • Python scripts used to develop the model. 
